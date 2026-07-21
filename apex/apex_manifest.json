@@ -1,0 +1,13 @@
+{
+  "version": 339990000,
+  "provideNativeLibs": [
+  ],
+  "provideSharedApexLibs": false,
+  "requireSharedApexLibs": [
+  ],
+  "name": "com.android.btservices",
+  "requireNativeLibs": [
+    "libaptX_decoder.so",
+    "libaptX_HD_decoder.so"
+  ]
+}

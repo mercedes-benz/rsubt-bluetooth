@@ -1,0 +1,91 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Generated mock file from original source file
+ *   Functions generated:12
+ */
+
+#include <cstdint>
+#include <map>
+#include <string>
+
+extern std::map<std::string, int> mock_function_count_map;
+
+#include "types/raw_address.h"
+#include "udrv/include/uipc.h"
+
+#ifndef UNUSED_ATTR
+#define UNUSED_ATTR
+#endif
+
+bool UIPC_Open(const RawAddress& peer_address, tUIPC_STATE& uipc, tUIPC_CH_ID ch_id, tUIPC_RCV_CBACK* p_cback,
+               const char* socket_path) {
+  mock_function_count_map[__func__]++;
+  return false;
+}
+bool UIPC_Send(tUIPC_STATE& uipc, tUIPC_CH_ID ch_id,
+               UNUSED_ATTR uint16_t msg_evt, const uint8_t* p_buf,
+               uint16_t msglen) {
+  mock_function_count_map[__func__]++;
+  return false;
+}
+int uipc_start_main_server_thread(tUIPC_STATE& uipc) {
+  mock_function_count_map[__func__]++;
+  return 0;
+}
+std::unique_ptr<tUIPC_STATE> UIPC_Init() {
+  mock_function_count_map[__func__]++;
+  return nullptr;
+}
+const char* dump_uipc_event(tUIPC_EVENT event) {
+  mock_function_count_map[__func__]++;
+  return nullptr;
+}
+uint32_t UIPC_Read(tUIPC_STATE& uipc, tUIPC_CH_ID ch_id, uint8_t* p_buf,
+                   uint32_t len) {
+  mock_function_count_map[__func__]++;
+  return 0;
+}
+bool UIPC_Ioctl(tUIPC_STATE& uipc, tUIPC_CH_ID ch_id, uint32_t request,
+                void* param) {
+  mock_function_count_map[__func__]++;
+  return false;
+}
+void UIPC_Close(tUIPC_STATE& uipc, tUIPC_CH_ID ch_id) {
+  mock_function_count_map[__func__]++;
+}
+void uipc_close_locked(tUIPC_STATE& uipc, tUIPC_CH_ID ch_id) {
+  mock_function_count_map[__func__]++;
+}
+void uipc_main_cleanup(tUIPC_STATE& uipc) {
+  mock_function_count_map[__func__]++;
+}
+void uipc_stop_main_server_thread(tUIPC_STATE& uipc) {
+  mock_function_count_map[__func__]++;
+}
+int uipc_get_free_ctrl_ch() {
+  mock_function_count_map[__func__]++;
+  return 0;
+}
+const RawAddress& uipc_get_address_from_ch(int ch_id) {
+  mock_function_count_map[__func__]++;
+  return RawAddress::kEmpty;
+}
+int uipc_get_ch_from_address(const RawAddress& peer_address, bool ctrl) {
+  mock_function_count_map[__func__]++;
+  return 0;
+}
