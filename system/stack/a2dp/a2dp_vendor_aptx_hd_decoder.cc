@@ -1,5 +1,6 @@
 /*
  * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright 2026 Mercedes Benz Group AG
 
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
