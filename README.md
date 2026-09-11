@@ -179,3 +179,16 @@ binary directly. By default, it will try to run on hci0 but you can pass it
 ```sh
 $OUTPUT_DIR/debug/btadapterd --hci=$HCI INIT_gd_hci=true
 ```
+
+### NOTE
+
+The following file may be needed:
+
+```
+system/vnd/include/vendor_api.h
+```
+
+it can be found here:
+
+https://android.googlesource.com/platform/packages/modules/Bluetooth/+/refs/heads/android13-dev/system/vnd/include/vendor_api.h
+
